@@ -1,0 +1,4 @@
+build_validate_enabled_flag(PYTHON_DEFAULT_EXECUTABLE)
+build_validate_target(doxygen)
+build_validate_target(doxygen_cpp)
+build_validate_target(check_pylint)
