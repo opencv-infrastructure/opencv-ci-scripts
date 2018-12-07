@@ -1,0 +1,4 @@
+build_validate_disabled_or_undefined_flag(ANDROID)
+
+build_validate_disabled_or_undefined_flag(HAVE_OPENCL)
+build_validate_disabled_or_undefined_flag(HAVE_IPP)
