@@ -147,6 +147,7 @@ build_validate_enabled_flag(HAVE_GTHREAD)
 build_validate_enabled_flag(HAVE_GTK)
 #build_validate_enabled_flag(HAVE_GTK3)  #=0
 build_validate_enabled_flag(HAVE_IMGCODEC_HDR)
+build_validate_enabled_flag(HAVE_IMGCODEC_PFM)
 build_validate_enabled_flag(HAVE_IMGCODEC_PXM)
 build_validate_enabled_flag(HAVE_IMGCODEC_SUNRASTER)
 build_validate_enabled_flag(HAVE_IPP)
