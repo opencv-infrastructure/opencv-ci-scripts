@@ -62,7 +62,7 @@ build_validate_enabled_flag(HAVE_CXX_WNO_LONG_LONG)
 #build_validate_enabled_flag(HAVE_CXX_WNO_MISLEADING_INDENTATION)  #=
 build_validate_enabled_flag(HAVE_CXX_WNO_MISSING_DECLARATIONS)
 #build_validate_enabled_flag(HAVE_CXX_WNO_MISSING_PROTOTYPES)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_NARROWING)
+##build_validate_enabled_flag(HAVE_CXX_WNO_NARROWING)
 build_validate_enabled_flag(HAVE_CXX_WNO_OVERLOADED_VIRTUAL)
 build_validate_enabled_flag(HAVE_CXX_WNO_PARENTHESES)
 build_validate_enabled_flag(HAVE_CXX_WNO_SHADOW)
@@ -110,7 +110,7 @@ build_validate_enabled_flag(HAVE_C_WNO_COMMENT)
 #build_validate_enabled_flag(HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR)  #=
 #build_validate_enabled_flag(HAVE_C_WNO_IMPLICIT_FALLTHROUGH)  #=
 build_validate_enabled_flag(HAVE_C_WNO_LONG_LONG)
-build_validate_enabled_flag(HAVE_C_WNO_NARROWING)
+##build_validate_enabled_flag(HAVE_C_WNO_NARROWING)
 build_validate_enabled_flag(HAVE_C_WNO_SHADOW)
 build_validate_enabled_flag(HAVE_C_WNO_SIGN_COMPARE)
 build_validate_enabled_flag(HAVE_C_WNO_UNDEF)
