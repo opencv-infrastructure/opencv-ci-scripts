@@ -23,21 +23,21 @@ build_validate_enabled_flag(HAVE_CPU_SSE3_SUPPORT)
 build_validate_enabled_flag(HAVE_CPU_SSE4_1_SUPPORT)
 build_validate_enabled_flag(HAVE_CPU_SSE4_2_SUPPORT)
 build_validate_enabled_flag(HAVE_CPU_SSSE3_SUPPORT)
-#build_validate_enabled_flag(HAVE_CSTRIPES)  #=0
 build_validate_enabled_flag(HAVE_CXX11)
 build_validate_enabled_flag(HAVE_D3D10)
 build_validate_enabled_flag(HAVE_D3D11)
+#build_validate_enabled_flag(HAVE_D3D11_4)  #=
 build_validate_enabled_flag(HAVE_D3D9)
 build_validate_enabled_flag(HAVE_DIRECTX)
 build_validate_enabled_flag(HAVE_DIRECTX_NV12)
 build_validate_enabled_flag(HAVE_DSHOW)
 build_validate_enabled_flag(HAVE_FCNTL_H)
 build_validate_enabled_flag(HAVE_FFMPEG)
-build_validate_enabled_flag(HAVE_FFMPEG_WRAPPER)
 #build_validate_enabled_flag(HAVE_FSEEKO)  #=
 #build_validate_enabled_flag(HAVE_GCD)  #=0
 build_validate_enabled_flag(HAVE_IEEEFP)
 build_validate_enabled_flag(HAVE_IMGCODEC_HDR)
+build_validate_enabled_flag(HAVE_IMGCODEC_PFM)
 build_validate_enabled_flag(HAVE_IMGCODEC_PXM)
 build_validate_enabled_flag(HAVE_IMGCODEC_SUNRASTER)
 build_validate_enabled_flag(HAVE_INTRIN_H)
@@ -55,9 +55,9 @@ build_validate_enabled_flag(HAVE_LIMITS_H)
 build_validate_enabled_flag(HAVE_MALLOC_H)
 build_validate_enabled_flag(HAVE_MEMMOVE)
 build_validate_enabled_flag(HAVE_MEMORY_H)
+build_validate_enabled_flag(HAVE_MFAPI)
 #build_validate_enabled_flag(HAVE_MKL)  #=OFF
 build_validate_enabled_flag(HAVE_MSMF)
-#build_validate_enabled_flag(HAVE_MSMF_DXVA)  #=
 #build_validate_enabled_flag(HAVE_OFF64_T)  #=FALSE
 build_validate_enabled_flag(HAVE_OPENEXR)
 build_validate_enabled_flag(HAVE_PNG)
@@ -99,11 +99,6 @@ build_validate_enabled_flag(HAVE_bigendian)
 # FOUND flags from CMakeVars.txt
 #
 #build_validate_enabled_flag(BLAS_FOUND)  #=FALSE
-build_validate_enabled_flag(FFMPEG_libavcodec_FOUND)
-build_validate_enabled_flag(FFMPEG_libavformat_FOUND)
-build_validate_enabled_flag(FFMPEG_libavresample_FOUND)
-build_validate_enabled_flag(FFMPEG_libavutil_FOUND)
-build_validate_enabled_flag(FFMPEG_libswscale_FOUND)
 #build_validate_enabled_flag(FLAKE8_FOUND)  #=FALSE
 #build_validate_enabled_flag(Flake8_FOUND)  #=FALSE
 build_validate_enabled_flag(GIT_FOUND)
