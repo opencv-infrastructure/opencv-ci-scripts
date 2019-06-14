@@ -7,7 +7,9 @@ build_validate_disabled_or_undefined_flag(HAVE_OPENCL)
 build_validate_enabled_flag(HAVE_IPP)
 
 
+#
 # HAVE flags from CMakeVars.txt
+#
 build_validate_enabled_flag(HAVE_CAMV4L2)
 build_validate_enabled_flag(HAVE_CMAKE_SIZEOF_UNSIGNED_SHORT)
 #build_validate_enabled_flag(HAVE_CONCURRENCY)  #=0
@@ -29,6 +31,7 @@ build_validate_enabled_flag(HAVE_CXX_FVISIBILITY_INLINES_HIDDEN)
 build_validate_enabled_flag(HAVE_CXX_MAVX)
 build_validate_enabled_flag(HAVE_CXX_MAVX2)
 build_validate_enabled_flag(HAVE_CXX_MAVX512F)
+build_validate_enabled_flag(HAVE_CXX_MAVX512F_MAVX512CD)
 build_validate_enabled_flag(HAVE_CXX_MAVX512F_MAVX512CD_MAVX512VL_MAVX512BW_MAVX512DQ)
 build_validate_enabled_flag(HAVE_CXX_MF16C)
 build_validate_enabled_flag(HAVE_CXX_MFMA)
@@ -51,41 +54,6 @@ build_validate_enabled_flag(HAVE_CXX_WFORMAT)
 build_validate_enabled_flag(HAVE_CXX_WINIT_SELF)
 build_validate_enabled_flag(HAVE_CXX_WMISSING_DECLARATIONS)
 #build_validate_enabled_flag(HAVE_CXX_WMISSING_PROTOTYPES)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_ARRAY_BOUNDS)
-build_validate_enabled_flag(HAVE_CXX_WNO_COMMENT)
-build_validate_enabled_flag(HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR)
-build_validate_enabled_flag(HAVE_CXX_WNO_DEPRECATED)
-build_validate_enabled_flag(HAVE_CXX_WNO_DEPRECATED_DECLARATIONS)
-#build_validate_enabled_flag(HAVE_CXX_WNO_ENUM_COMPARE_SWITCH)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_EXTRA)
-build_validate_enabled_flag(HAVE_CXX_WNO_IGNORED_QUALIFIERS)
-#build_validate_enabled_flag(HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH)  #=
-#build_validate_enabled_flag(HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_INVALID_OFFSETOF)
-build_validate_enabled_flag(HAVE_CXX_WNO_LONG_LONG)
-#build_validate_enabled_flag(HAVE_CXX_WNO_MISLEADING_INDENTATION)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_MISSING_DECLARATIONS)
-#build_validate_enabled_flag(HAVE_CXX_WNO_MISSING_PROTOTYPES)  #=
-##build_validate_enabled_flag(HAVE_CXX_WNO_NARROWING)
-build_validate_enabled_flag(HAVE_CXX_WNO_OVERLOADED_VIRTUAL)
-build_validate_enabled_flag(HAVE_CXX_WNO_PARENTHESES)
-build_validate_enabled_flag(HAVE_CXX_WNO_SHADOW)
-#build_validate_enabled_flag(HAVE_CXX_WNO_SHORTEN_64_TO_32)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_SIGN_COMPARE)
-build_validate_enabled_flag(HAVE_CXX_WNO_SIGN_PROMO)
-build_validate_enabled_flag(HAVE_CXX_WNO_SUGGEST_OVERRIDE)
-build_validate_enabled_flag(HAVE_CXX_WNO_SWITCH)
-#build_validate_enabled_flag(HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_UNDEF)
-build_validate_enabled_flag(HAVE_CXX_WNO_UNINITIALIZED)
-#build_validate_enabled_flag(HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED)
-build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_BUT_SET_VARIABLE)
-#build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_CONST_VARIABLE)  #=
-build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_FUNCTION)
-build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS)
-build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_PARAMETER)
-#build_validate_enabled_flag(HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD)  #=
 build_validate_enabled_flag(HAVE_CXX_WPOINTER_ARITH)
 build_validate_enabled_flag(HAVE_CXX_WSHADOW)
 build_validate_enabled_flag(HAVE_CXX_WSIGN_PROMO)
@@ -112,16 +80,6 @@ build_validate_enabled_flag(HAVE_C_WFORMAT)
 build_validate_enabled_flag(HAVE_C_WINIT_SELF)
 build_validate_enabled_flag(HAVE_C_WMISSING_DECLARATIONS)
 build_validate_enabled_flag(HAVE_C_WMISSING_PROTOTYPES)
-build_validate_enabled_flag(HAVE_C_WNO_COMMENT)
-#build_validate_enabled_flag(HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR)  #=
-#build_validate_enabled_flag(HAVE_C_WNO_IMPLICIT_FALLTHROUGH)  #=
-build_validate_enabled_flag(HAVE_C_WNO_LONG_LONG)
-##build_validate_enabled_flag(HAVE_C_WNO_NARROWING)
-build_validate_enabled_flag(HAVE_C_WNO_SHADOW)
-build_validate_enabled_flag(HAVE_C_WNO_SIGN_COMPARE)
-build_validate_enabled_flag(HAVE_C_WNO_UNDEF)
-#build_validate_enabled_flag(HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS)  #=
-build_validate_enabled_flag(HAVE_C_WNO_UNUSED_VARIABLE)
 build_validate_enabled_flag(HAVE_C_WPOINTER_ARITH)
 build_validate_enabled_flag(HAVE_C_WSHADOW)
 #build_validate_enabled_flag(HAVE_C_WSIGN_PROMO)  #=
@@ -129,22 +87,15 @@ build_validate_enabled_flag(HAVE_C_WSTRICT_PROTOTYPES)
 #build_validate_enabled_flag(HAVE_C_WSUGGEST_OVERRIDE)  #=
 build_validate_enabled_flag(HAVE_C_WUNDEF)
 build_validate_enabled_flag(HAVE_C_WUNINITIALIZED)
-#build_validate_enabled_flag(HAVE_DC1394)  #=0
-#build_validate_enabled_flag(HAVE_DC1394_2)  #=0
 build_validate_enabled_flag(HAVE_DL_LIBRARY)
 build_validate_enabled_flag(HAVE_EIGEN)
 build_validate_enabled_flag(HAVE_FFMPEG)
 #build_validate_enabled_flag(HAVE_GCD)  #=0
 build_validate_enabled_flag(HAVE_GDAL)
 #build_validate_enabled_flag(HAVE_GDCM)  #=NO
-#build_validate_enabled_flag(HAVE_GSTREAMER_APP)  #=0
-#build_validate_enabled_flag(HAVE_GSTREAMER_BASE)  #=0
-#build_validate_enabled_flag(HAVE_GSTREAMER_PBUTILS)  #=0
-#build_validate_enabled_flag(HAVE_GSTREAMER_RIFF)  #=0
-#build_validate_enabled_flag(HAVE_GSTREAMER_VIDEO)  #=0
 build_validate_enabled_flag(HAVE_GTHREAD)
 build_validate_enabled_flag(HAVE_GTK)
-#build_validate_enabled_flag(HAVE_GTK3)  #=0
+build_validate_enabled_flag(HAVE_GTK2)
 build_validate_enabled_flag(HAVE_IMGCODEC_HDR)
 build_validate_enabled_flag(HAVE_IMGCODEC_PFM)
 build_validate_enabled_flag(HAVE_IMGCODEC_PXM)
@@ -173,7 +124,76 @@ build_validate_enabled_flag(HAVE_STDDEF_H)
 build_validate_enabled_flag(HAVE_STDINT_H)
 build_validate_enabled_flag(HAVE_SYS_TYPES_H)
 build_validate_enabled_flag(HAVE_TIFF)
+build_validate_enabled_flag(HAVE_V4L)
 #build_validate_enabled_flag(HAVE_VIDEOIO)  #=
 build_validate_enabled_flag(HAVE_VTK)
 build_validate_enabled_flag(HAVE_WEBP)
 build_validate_enabled_flag(HAVE_WORDS_BIGENDIAN)
+#
+# FOUND flags from CMakeVars.txt
+#
+build_validate_enabled_flag(ATLAS_FOUND)
+build_validate_enabled_flag(Atlas_FOUND)
+#build_validate_enabled_flag(DC1394_2_FOUND)  #=
+build_validate_enabled_flag(EIGEN3_FOUND)
+build_validate_enabled_flag(Eigen3_FOUND)
+build_validate_enabled_flag(FFMPEG_FOUND)
+#build_validate_enabled_flag(FFMPEG_libavresample_FOUND)  #=
+#build_validate_enabled_flag(FLAKE8_FOUND)  #=FALSE
+build_validate_enabled_flag(FREETYPE_FOUND)
+#build_validate_enabled_flag(Flake8_FOUND)  #=FALSE
+build_validate_enabled_flag(GDAL_FOUND)
+#build_validate_enabled_flag(GDCM_FOUND)  #=0
+build_validate_enabled_flag(GIT_FOUND)
+#build_validate_enabled_flag(GSTREAMER_app_FOUND)  #=
+#build_validate_enabled_flag(GSTREAMER_base_FOUND)  #=
+#build_validate_enabled_flag(GSTREAMER_pbutils_FOUND)  #=
+#build_validate_enabled_flag(GSTREAMER_riff_FOUND)  #=
+build_validate_enabled_flag(GTHREAD_FOUND)
+build_validate_enabled_flag(GTK2_FOUND)
+#build_validate_enabled_flag(GTK3_FOUND)  #=
+build_validate_enabled_flag(Git_FOUND)
+build_validate_enabled_flag(HARFBUZZ_FOUND)
+build_validate_enabled_flag(JASPER_FOUND)
+build_validate_enabled_flag(JNI_FOUND)
+build_validate_enabled_flag(JPEG_FOUND)
+build_validate_enabled_flag(Jasper_FOUND)
+#build_validate_enabled_flag(OpenBLAS_FOUND)  #=OFF
+#build_validate_enabled_flag(OpenCV_HAL_FOUND)  #=0
+build_validate_enabled_flag(PCHSupport_FOUND)
+build_validate_enabled_flag(PKGCONFIG_FOUND)
+build_validate_enabled_flag(PKG_CONFIG_FOUND)
+build_validate_enabled_flag(PNG_FOUND)
+#build_validate_enabled_flag(PYLINT_FOUND)  #=FALSE
+build_validate_enabled_flag(PYTHON2INTERP_FOUND)
+build_validate_enabled_flag(PYTHON2LIBS_FOUND)
+build_validate_enabled_flag(PYTHON3INTERP_FOUND)
+build_validate_enabled_flag(PYTHON3LIBS_FOUND)
+build_validate_enabled_flag(PkgConfig_FOUND)
+#build_validate_enabled_flag(Pylint_FOUND)  #=FALSE
+build_validate_enabled_flag(TIFF_FOUND)
+build_validate_enabled_flag(Tesseract_FOUND)
+build_validate_enabled_flag(VTK_FOUND)
+build_validate_enabled_flag(WEBP_FOUND)
+build_validate_enabled_flag(WebP_FOUND)
+build_validate_enabled_flag(ZLIB_FOUND)
+#
+# PATH flags from CMakeVars.txt
+#
+build_validate(OPENCV_3P_LIB_INSTALL_PATH "lib/opencv4/3rdparty")
+build_validate(OPENCV_BIN_INSTALL_PATH "bin")
+build_validate(OPENCV_CONFIG_INSTALL_PATH "lib/cmake/opencv4")
+build_validate(OPENCV_DOC_INSTALL_PATH "share/doc/opencv4")
+build_validate(OPENCV_INCLUDE_INSTALL_PATH "include/opencv4")
+build_validate(OPENCV_JAR_INSTALL_PATH "share/java/opencv4")
+build_validate(OPENCV_JNI_BIN_INSTALL_PATH "share/java/opencv4")
+build_validate(OPENCV_JNI_INSTALL_PATH "share/java/opencv4")
+build_validate(OPENCV_LIB_ARCHIVE_INSTALL_PATH "lib")
+build_validate(OPENCV_LIB_INSTALL_PATH "lib")
+build_validate(OPENCV_LICENSES_INSTALL_PATH "share/licenses/opencv4")
+build_validate(OPENCV_OTHER_INSTALL_PATH "share/opencv4")
+build_validate(OPENCV_SAMPLES_BIN_INSTALL_PATH "samples")
+build_validate(OPENCV_SAMPLES_SRC_INSTALL_PATH "share/opencv4/samples")
+build_validate(OPENCV_SETUPVARS_INSTALL_PATH "bin")
+build_validate(OPENCV_TEST_DATA_INSTALL_PATH "share/opencv4/testdata")
+build_validate(OPENCV_TEST_INSTALL_PATH "bin")
