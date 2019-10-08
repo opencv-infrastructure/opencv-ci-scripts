@@ -15,4 +15,4 @@ build_validate_compiler_flags(CMAKE_CXX_FLAGS_DEBUG
 )
 
 build_validate_list(CPU_BASELINE_FINAL "SSE;SSE2;SSE3")
-build_validate_list(CPU_DISPATCH_FINAL "SSE4_1;SSE4_2;FP16;AVX;AVX2")
+build_validate_list(CPU_DISPATCH_FINAL "SSE4_1;SSE4_2;FP16;AVX")
