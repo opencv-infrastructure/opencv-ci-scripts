@@ -234,7 +234,7 @@ build_validate_enabled_flag(HAVE_SYS_TIME_H)
 build_validate_enabled_flag(HAVE_SYS_TYPES_H)
 build_validate_enabled_flag(HAVE_TIFF)
 build_validate_enabled_flag(HAVE_UNISTD_H)
-build_validate_enabled_flag(HAVE_VTK)
+#build_validate_enabled_flag(HAVE_VTK)  VTK 9.0 is not supported by OpenCV 3.x
 build_validate_enabled_flag(HAVE_WEBP)
 build_validate_enabled_flag(HAVE_WORDS_BIGENDIAN)
 build_validate_enabled_flag(HAVE_bigendian)
