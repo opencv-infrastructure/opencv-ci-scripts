@@ -3,7 +3,7 @@ build_validate(CMAKE_SYSTEM_PROCESSOR "x86_64")
 build_validate(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 build_validate_compiler_flags(CMAKE_CXX_FLAGS
-"-fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden"
+"-fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden"
 )
 
 build_validate_compiler_flags(CMAKE_CXX_FLAGS_RELEASE
