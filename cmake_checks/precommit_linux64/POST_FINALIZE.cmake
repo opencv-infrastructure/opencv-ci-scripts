@@ -1,4 +1,3 @@
-build_validate_enabled_flag(BUILD_opencv_python2)
 build_validate_enabled_flag(BUILD_opencv_python3)
 
 build_validate_disabled_or_undefined_flag(ANDROID)
@@ -162,8 +161,6 @@ build_validate_enabled_flag(PKGCONFIG_FOUND)
 build_validate_enabled_flag(PKG_CONFIG_FOUND)
 build_validate_enabled_flag(PNG_FOUND)
 #build_validate_enabled_flag(PYLINT_FOUND)  #=FALSE
-build_validate_enabled_flag(PYTHON2INTERP_FOUND)
-build_validate_enabled_flag(PYTHON2LIBS_FOUND)
 build_validate_enabled_flag(PYTHON3INTERP_FOUND)
 build_validate_enabled_flag(PYTHON3LIBS_FOUND)
 build_validate_enabled_flag(PkgConfig_FOUND)
