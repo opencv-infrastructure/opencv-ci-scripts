@@ -93,7 +93,7 @@ build_validate_enabled_flag(HAVE_GDAL)
 #build_validate_enabled_flag(HAVE_GDCM)  #=NO
 build_validate_enabled_flag(HAVE_GTHREAD)
 build_validate_enabled_flag(HAVE_GTK)
-build_validate_enabled_flag(HAVE_GTK2)
+#build_validate_enabled_flag(HAVE_GTK2)
 build_validate_enabled_flag(HAVE_IMGCODEC_HDR)
 build_validate_enabled_flag(HAVE_IMGCODEC_PFM)
 build_validate_enabled_flag(HAVE_IMGCODEC_PXM)
